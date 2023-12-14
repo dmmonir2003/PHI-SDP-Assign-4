@@ -5,3 +5,7 @@ from task.models import TaskModel
 class CategoryModel(models.Model):
     name=models.CharField(max_length=100)
     category=models.ManyToManyField(TaskModel)
+
+    def __str__(self):
+        return self.name
+    

@@ -8,3 +8,7 @@ class TaskModel(models.Model):
     task_description=models.TextField()
     is_completed=models.BooleanField(default=False)
     task_assign_date=models.DateField()
+
+    def __str__(self):
+        return self.task_title
+    
