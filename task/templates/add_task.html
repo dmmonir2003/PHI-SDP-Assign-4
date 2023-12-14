@@ -1,11 +1,11 @@
 {% extends "base.html" %} {% load crispy_forms_tags %} {% block content %}
 
-<div style="width: 50%; margin: auto">
+<div style="width: 50%; margin: auto" class="py-5">
   <h1 class="py-5">Add Task Page !!</h1>
   <form method="post">
     {% csrf_token %} {{forms| crispy}}
 
-    <input class="btn btn-primary" type="submit" value="Add Category" />
+    <input class="btn btn-primary" type="submit" value="Add Task" />
   </form>
 </div>
 
