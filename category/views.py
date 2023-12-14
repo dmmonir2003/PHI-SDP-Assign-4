@@ -12,4 +12,4 @@ def add_category(request):
             return redirect('add_category')
     else:
         category_form=forms.CategoryForm()
-    return render(request,'add_task.html',{'forms': category_form})
+    return render(request,'add_category.html',{'forms': category_form})
